@@ -9,65 +9,145 @@
 <body>
     <!-- Шапка сайта с кнопкой -->
     <header>
-    <div class="header-container">
-        <div class="header-left">
-            <h1>Дом с Умом</h1>
-            <p>Умный дом и строительство ИЖС в Санкт-Петербурге и ЛО</p>
+        <div class="header-container">
+            <div class="header-left">
+                <h1>Дом с Умом</h1>
+                <p>Умный дом и строительство ИЖС в Санкт-Петербурге и ЛО</p>
+            </div>
+            <div class="header-right">
+                <button id="consultBtn" class="consult-button">Получить консультацию</button>
+            </div>
         </div>
-        <div class="header-right">
-            <button id="consultBtn" class="consult-button">Получить консультацию</button>
-        </div>
-    </div>
-</header>
+    </header>
 
-    <!-- Раздел с услугами -->
-    <section>
-        <h2>Наши услуги</h2>
-        <ul>
-            <li>🏠 Строительство домов под ключ</li>
-<img src="assets/minidomsymom.jpeg" alt="МИНИ Дом с Умом" width="33%"><img src="assets/microdomsymom1.jpg" alt="Проектирование МИКРОдома" width="33%"><img src="assets/microdomsymom.jpeg" alt="МИКРО Дом с Умом" width="33%">
-            <li>🧠 Монтаж систем умного дома</li>
-<img src="assets/domhitepro.jpg" alt="Умный дом" width="25%"><img src="assets/nastroikihitepro.jpg" alt="Умный дом" width="25%"><img src="assets/scenariihitepro.jpg" alt="Умный дом" width="25%"><img src="assets/svethitepro.jpg" alt="Умный дом" width="25%">
-            <li>⚡ Электромонтажные работы</li>
-<img src="assets/kvartira.jpg" alt="Умный дом" width="20%"><img src="assets/kvartira1.jpg" alt="Умный дом" width="20%"><img src="assets/kvartira2.jpg" alt="Умный дом" width="20%"><img src="assets/kvartira3.jpg" alt="Умный дом" width="20%"><img src="assets/kvartira4.jpg" alt="Умный дом" width="20%">
-        </ul>
+    <!-- МЕНЮ С ВКЛАДКАМИ (НОВОЕ) -->
+    <nav class="tabs-menu">
+        <button class="tab-button active" data-tab="build">Строительство дома под ключ</button>
+        <button class="tab-button" data-tab="smart">Умный дом</button>
+        <button class="tab-button" data-tab="projects">Проекты</button>
+    </nav>
+
+    <!-- КОНТЕНТ ДЛЯ ВКЛАДКИ: Строительство дома под ключ -->
+    <section class="tab-content active" id="build-content">
+        <h2>Строительство домов под ключ</h2>
+        <div class="content-grid">
+            <div class="text-block">
+                <p>Мы строим надёжные дома из газобетона, кирпича и по каркасной технологии в Санкт-Петербурге и Ленинградской области.</p>
+                <h3>Что входит в услугу:</h3>
+                <ul>
+                    <li>Фундамент и кровля</li>
+                    <li>Возведение стен и перекрытий</li>
+                    <li>Инженерные сети под ключ</li>
+                    <li>Чистовая отделка по вашему проекту</li>
+                    <li>Гарантия 5 лет на все работы</li>
+                </ul>
+                <p><strong>Сроки строительства: от 3 месяцев.</strong></p>
+            </div>
+            <div class="image-block">
+                <img src="assets/minidomsymom.jpeg" alt="Строительство дома">
+            </div>
+        </div>
     </section>
 
-    <!-- Раздел с контактами -->
+    <!-- КОНТЕНТ ДЛЯ ВКЛАДКИ: Умный дом -->
+    <section class="tab-content" id="smart-content">
+        <h2>Монтаж систем умного дома</h2>
+        <div class="content-grid">
+            <div class="text-block">
+                <p>Автоматизируйте ваш дом: управление светом, климатом, безопасностью и мультимедиа с одного приложения.</p>
+                <h3>Что мы делаем:</h3>
+                <ul>
+                    <li>Разработка проекта автоматизации</li>
+                    <li>Монтаж контроллеров и датчиков</li>
+                    <li>Настройка сценариев (режимы "Утро", "Вечер", "Уезд")</li>
+                    <li>Интеграция с голосовыми помощниками</li>
+                    <li>Поддержка и модернизация</li>
+                </ul>
+                <p><strong>Гарантия на оборудование и монтаж — 2 года.</strong></p>
+            </div>
+            <div class="image-block">
+                <img src="assets/domhitepro.jpg" alt="Умный дом">
+            </div>
+        </div>
+        <div style="margin-top: 30px;">
+            <h3>Наши работы по умному дому</h3>
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                <img src="assets/nastroikihitepro.jpg" alt="Настройка" width="23%">
+                <img src="assets/scenariihitepro.jpg" alt="Сценарии" width="23%">
+                <img src="assets/svethitepro.jpg" alt="Свет" width="23%">
+                <img src="assets/kvartira.jpg" alt="Квартира" width="23%">
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТЕНТ ДЛЯ ВКЛАДКИ: Проекты (галерея) -->
+    <section class="tab-content" id="projects-content">
+        <h2>Наши проекты</h2>
+        <div class="projects-gallery">
+            <div class="project-item">
+                <img src="assets/microdomsymom.jpeg" alt="МИКРО Дом с Умом">
+                <p>МИКРО-дом "Умный" — 14 м²</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/minidomsymom.jpeg" alt="МИНИ Дом с Умом">
+                <p>МИНИ-дом "Комфорт" — 65 м²</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/microdomsymom1.jpg" alt="Проектирование МИКРОдома">
+                <p>Проект МИКРО-дома с умной системой</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/kvartira1.jpg" alt="Квартира 1">
+                <p>Умная квартира, ЖК "Невский"</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/kvartira2.jpg" alt="Квартира 2">
+                <p>Умная квартира, ЖК "Ладожский"</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/kvartira3.jpg" alt="Квартира 3">
+                <p>Умная квартира с климат-контролем</p>
+            </div>
+            <div class="project-item">
+                <img src="assets/kvartira4.jpg" alt="Квартира 4">
+                <p>Световые сценарии в квартире</p>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 30px;">
+            <button id="consultBtn2" class="consult-button">Обсудить ваш проект</button>
+        </p>
+    </section>
+
+    <!-- Раздел с контактами (оставлен как есть) -->
     <section>
         <h2>Контакты</h2>
         <p>Телефон: +7 (981) 973-83-43</p>
         <p>Email: info@domsymom.ru</p>
-        <p>Адрес: Ленинградская область, Всеволожский район, Колтушское городское поселение, 59.888756,30.688447, </p>
+        <p>Адрес: Ленинградская область, Всеволожский район, Колтушское городское поселение, 59.888756,30.688447</p>
     </section>
 
     <footer>
         <p>© 2026 Дом с Умом</p>
     </footer>
 
-<!-- Модальное окно (всплывающая форма) -->
+    <!-- Модальное окно (всплывающая форма) -->
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Оставьте заявку</h2>
             <p>Мы перезвоним в течение часа</p>
             
-            <!-- ФОРМА — данные отправляются на сервер -->
             <form id="consultForm" action="https://formsubmit.co/baunvv@yandex.ru" method="POST">
-                <!-- Скрытые поля для настройки FormSubmit -->
                 <input type="hidden" name="_subject" value="Новая заявка с сайта Дом с Умом">
                 <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://ваш-логин.github.io/название-репозитория/thanks.html">
+                <input type="hidden" name="_next" value="https://avtoooo1111.github.io/domsymom/thanks.html">
                 
-                <!-- Поле для телефона -->
                 <label for="phone">Телефон *</label>
                 <input type="tel" id="phone" name="Телефон" placeholder="+7 (XXX) XXX-XX-XX" required>
 
-<!-- Поле для email -->
                 <label for="email">Email</label>
                 <input type="email" id="email" name="Email" placeholder="max@example.com">
                 
-                <!-- Чекбокс согласия -->
                 <label class="checkbox-label">
                     <input type="checkbox" id="consent" name="Согласие" required>
                     Я соглашаюсь на обработку персональных данных

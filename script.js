@@ -40,3 +40,27 @@ document.getElementById('consultForm').addEventListener('submit', function(e) {
     // Если всё ок — форма отправится
     return true;
 });
+// ===== РАБОТА ВКЛАДОК =====
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        const tabId = button.getAttribute('data-tab') + '-content';
+        
+        tabContents.forEach(content => content.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+    });
+});
+
+// Кнопка "Обсудить ваш проект" из вкладки "Проекты"
+const consultBtn2 = document.getElementById('consultBtn2');
+if (consultBtn2) {
+    consultBtn2.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'block';
+    });
+}
