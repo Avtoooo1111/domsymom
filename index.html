@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дом с Умом — Умный дом и строительство в СПБ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта с кнопкой -->
+    <header>
+<div class="header-container">
+        <h1>Дом с Умом</h1>
+        <p>Умный дом и строительство ИЖС в Санкт-Петербурге и ЛО</p>
+    <button id="consultBtn" class="consult-button">Получить консультацию</button>
+        </div>
+    </header>
+
+    <!-- Раздел с услугами -->
+    <section>
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>🏠 Строительство домов под ключ</li>
+<img src="assets/minidomsymom.jpeg" alt="МИНИ Дом с Умом" width="33%"><img src="assets/microdomsymom1.jpg" alt="Проектирование МИКРОдома" width="33%"><img src="assets/microdomsymom.jpeg" alt="МИКРО Дом с Умом" width="33%">
+            <li>🧠 Монтаж систем умного дома</li>
+<img src="assets/domhitepro.jpg" alt="Умный дом" width="25%"><img src="assets/nastroikihitepro.jpg" alt="Умный дом" width="25%"><img src="assets/scenariihitepro.jpg" alt="Умный дом" width="25%"><img src="assets/svethitepro.jpg" alt="Умный дом" width="25%">
+            <li>⚡ Электромонтажные работы</li>
+<img src="assets/minidomsymom1.jpeg" alt="Умный дом" width="25%">
+        </ul>
+    </section>
+
+    <!-- Раздел с контактами -->
+    <section>
+        <h2>Контакты</h2>
+        <p>Телефон: +7 (981) 973-83-43</p>
+        <p>Email: info@domsymom.ru</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Дом с Умом</p>
+    </footer>
+
+<!-- Модальное окно (всплывающая форма) -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оставьте заявку</h2>
+            <p>Мы перезвоним в течение часа</p>
+            
+            <!-- ФОРМА — данные отправляются на сервер -->
+            <form id="consultForm" action="https://formsubmit.co/baunvv@yandex.ru" method="POST">
+                <!-- Скрытые поля для настройки FormSubmit -->
+                <input type="hidden" name="_subject" value="Новая заявка с сайта Дом с Умом">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://ваш-логин.github.io/название-репозитория/thanks.html">
+                
+                <!-- Поле для телефона -->
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" name="Телефон" placeholder="+7 (XXX) XXX-XX-XX" required>
+
+<!-- Поле для email -->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="max@example.com">
+                
+                <!-- Чекбокс согласия -->
+                <label class="checkbox-label">
+                    <input type="checkbox" id="consent" name="Согласие" required>
+                    Я соглашаюсь на обработку персональных данных
+                </label>
+                
+                <button type="submit" class="submit-button">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
