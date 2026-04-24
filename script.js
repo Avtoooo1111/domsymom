@@ -64,3 +64,10 @@ if (consultBtn2) {
         modal.style.display = 'block';
     });
 }
+const consultBtn3 = document.getElementById('consultBtn3');
+if (consultBtn3) {
+    consultBtn3.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'block';
+    });
+}
