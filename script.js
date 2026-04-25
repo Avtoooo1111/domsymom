@@ -71,3 +71,20 @@ if (consultBtn3) {
         modal.style.display = 'block';
     });
 }
+// Кнопки для новых вкладок
+const consultBtn4 = document.getElementById('consultBtn4');
+const consultBtn5 = document.getElementById('consultBtn5');
+
+if (consultBtn4) {
+    consultBtn4.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'block';
+    });
+}
+
+if (consultBtn5) {
+    consultBtn5.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'block';
+    });
+}
