@@ -88,3 +88,20 @@ if (consultBtn5) {
         modal.style.display = 'block';
     });
 }
+// Кнопка "Заказать баню"
+const consultBtnBanya = document.getElementById('consultBtnBanya');
+if (consultBtnBanya) {
+    consultBtnBanya.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'block';
+    });
+}
+
+// Кнопка "Заказать купель"
+const consultBtnKupel = document.getElementById('consultBtnKupel');
+if (consultBtnKupel) {
+    consultBtnKupel.addEventListener('click', () => {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'block';
+    });
+}
