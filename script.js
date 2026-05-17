@@ -1,4 +1,3 @@
-javascript
 // ===== ПРОВЕРКА СУЩЕСТВОВАНИЯ МОДАЛЬНОГО ОКНА =====
 const modal = document.getElementById('modal');
 if (!modal) {
@@ -14,14 +13,6 @@ function openModal() {
     } else {
         alert('Форма временно недоступна. Пожалуйста, свяжитесь по телефону +7 (981) 973-83-43');
     }
-}
-// ===== МОДАЛЬНОЕ ОКНО =====
-const modal = document.getElementById('modal');
-const closeSpan = document.getElementsByClassName('close')[0];
-
-// Функция открытия модального окна
-function openModal() {
-    if (modal) modal.style.display = 'block';
 }
 
 // Открытие по главной кнопке "Получить консультацию"
@@ -68,7 +59,6 @@ if (form) {
 }
 
 // ===== ВСЕ КНОПКИ ЗАКАЗА (единый обработчик) =====
-// Список всех ID кнопок, которые открывают модальное окно
 const buttonIds = [
     'consultBtn2', 'consultBtn3', 'consultBtn4', 'consultBtn5',
     'consultBtnBanya', 'consultBtnKupel'
