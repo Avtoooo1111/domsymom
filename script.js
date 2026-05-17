@@ -1,4 +1,20 @@
 javascript
+// ===== ПРОВЕРКА СУЩЕСТВОВАНИЯ МОДАЛЬНОГО ОКНА =====
+const modal = document.getElementById('modal');
+if (!modal) {
+    console.warn('Модальное окно не найдено на этой странице');
+}
+
+const closeSpan = modal ? document.getElementsByClassName('close')[0] : null;
+
+// Функция открытия модального окна
+function openModal() {
+    if (modal) {
+        modal.style.display = 'block';
+    } else {
+        alert('Форма временно недоступна. Пожалуйста, свяжитесь по телефону +7 (981) 973-83-43');
+    }
+}
 // ===== МОДАЛЬНОЕ ОКНО =====
 const modal = document.getElementById('modal');
 const closeSpan = document.getElementsByClassName('close')[0];
