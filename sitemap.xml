@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Главная страница -->
+    <!-- Главная страница (СПб и ЛО) -->
     <url>
         <loc>https://domsymom.ru/</loc>
+        <lastmod>2026-06-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Москва и Московская область -->
+    <url>
+        <loc>https://domsymom.ru/index-msk.html</loc>
         <lastmod>2026-06-20</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -37,7 +45,6 @@
         <priority>0.8</priority>
     </url>
     
-    <!-- Новая страница -->
     <url>
         <loc>https://domsymom.ru/otdelka.html</loc>
         <lastmod>2026-06-20</lastmod>
