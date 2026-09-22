@@ -61,7 +61,7 @@ if (form) {
 // ===== ВСЕ КНОПКИ ЗАКАЗА (единый обработчик) =====
 const buttonIds = [
     'consultBtn2', 'consultBtn3', 'consultBtn4', 'consultBtn5',
-    'consultBtnBanya', 'consultBtnKupel', 'consultBtnOtdelka', 'consultBtnZabor'
+    'consultBtnBanya', 'consultBtnKupel', 'consultBtnOtdelka', 'consultBtnZabor', 'consultBtnService'
 ];
 
 buttonIds.forEach(id => {
