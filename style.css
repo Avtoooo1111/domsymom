@@ -244,18 +244,20 @@ footer {
 }
 
 /* ===== ГАЛЕРЕЯ ПРОЕКТОВ ===== */
+/* Ровно 3 картинки в ряд */
 .projects-gallery {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .project-item {
-    flex: 1;
-    min-width: 200px;
-    max-width: 250px;
+    flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
     text-align: center;
+    box-sizing: border-box;
 }
 
 /* МАСШТАБИРОВАНИЕ КАРТИНОК С СОХРАНЕНИЕМ ПРОПОРЦИЙ */
@@ -284,17 +286,29 @@ footer {
     max-width: 100%;
 }
 
-/* Адаптация для планшетов */
+/* ===== АДАПТАЦИЯ ===== */
+
+/* Планшеты: 2 картинки в ряд */
 @media (max-width: 768px) {
+    .project-item {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+    
     .project-item img {
         height: 180px;
     }
 }
 
-/* Адаптация для телефонов */
+/* Телефоны: 1 картинка в ряд */
 @media (max-width: 480px) {
+    .project-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
     .project-item img {
-        height: 150px;
+        height: 220px;
     }
 }
 
